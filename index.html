@@ -7,7 +7,9 @@
     <title>Section</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;600&display=swap');
+        /* font-family: 'Montserrat', sans-serif;
+        font-family: 'Quicksand', sans-serif; */
         
         *{
             padding: 0;
@@ -15,66 +17,67 @@
             box-sizing: border-box;
         }
         .custom__section-area {
-            padding: 112px 0;
+            padding: 80px 0;
         }
         .custom__container{
             margin: 0 auto;
             padding:0 15px;
             width: 100%;
-            max-width:1320px;
+            max-width:1140px;
         }
         .row{
             display: flex;
             flex-wrap: wrap;
         }
         .col-lg-6{
-            width:50%;
+            max-width: 50%;
+            flex-basis: 50%;
         }
 
         /* Single Box */
 
         .single-box{
             display: flex;
-            margin-bottom: 1.2rem;
         }
         
+        .box-img{
+            width:18%;
+            position: relative;
+        }
         .box-content{
-            width:80%;
+            width:82%;
         }
 
         .left__content{
-            padding-right: 1.5rem;
+            padding-right: 1rem;
         }
         .left__content h2{
-            font-size:2.25rem;
-            color:#2e384d;
-            line-height: 1;
-            padding-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size:28px;
+            font-weight: 700;
+            color:#000;
+            line-height: 45px;
+            padding-bottom: 20px;
             margin-top: 0;
             margin-bottom: 0;
             margin-left:1.5rem;
-            letter-spacing: 0.025em;
+            letter-spacing: 0.4px;
         }
         .left__content h2 span{
             color:#ffc60a;
-        }
-
-        .box-img{
-            width:20%;
-            position: relative;
+            font-style: italic;
         }
 
         .box-img span{
             width: 70px;
             height: 70px;
-            border: 2px solid #f3f4f6;
             border-radius: 100%;
         }
         .box-img span:first-child img{
-            width: 42px;
+            width: 60px;
         }
         .box-img span:last-child img{
-            width: 42px;
+            width: 60px;
         }
         .single-box.active .box-img span:first-child{
             display:none;
@@ -89,9 +92,6 @@
             align-items: center;
             justify-content: center;
         }
-        .single-box .box-img span:first-child img{
-            opacity: 0.3;
-        }
         .single-box .box-img span:last-child{
             display:none;
         }
@@ -99,21 +99,22 @@
             cursor: pointer;
         }
         .box-content h3{
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 45px;
             margin: 0;
-            font-size: 1.5rem;
-            line-height: 2.25rem;
-            color:#2e384d;
+            color:#000;
         }
         .box-content p{
-            font-family: 'Lato', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
             font-weight: 400;
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-            color:#5a5b5d;
-            margin: 0;
-            width:95%;
+            line-height: 29px;
+            color: rgba(18,18,18,0.75);
+            margin-top: -10px;
+            margin-bottom: 0;
+            width:88%;
         }
         .single-box.active .box-content h3{
             color:#ffc60a;
@@ -121,16 +122,15 @@
 
 
         .right__content{
-            padding-left: 2rem;
+            padding: 15px;
         }
-
         .right__content span{
             display:none;
         }
         .right__content span img{
             width: 100%;
+            max-width:495px;
             padding-top: 3rem;
-            padding-right: 2rem;
         }
         .right__content span:first-child{
             display:block;
@@ -329,12 +329,12 @@
                         </div>
                         <div class="single-box">
                             <div class="box-img">
-                                    <span>
-                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/5.png?v=1657879889" alt="sunpanion">
-                                    </span>
-                                    <span>
-                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/6.png?v=1657879877" alt="sunpanion">
-                                    </span>
+                                <span>
+                                    <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/9.png?v=1657880169" alt="sunpanion">
+                                </span>
+                                <span>
+                                    <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/10.png?v=1657880158" alt="sunpanion">
+                                </span>
                             </div>
                             <div class="box-content">
                                 <h3>Inspire hope</h3>
@@ -343,12 +343,12 @@
                         </div>
                         <div class="single-box">
                             <div class="box-img">
-                                    <span>
-                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/7.png?v=1657879984" alt="sunpanion">
-                                    </span>
-                                    <span>
-                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/8.png?v=1657879971" alt="sunpanion">
-                                    </span>
+                                <span>
+                                    <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/5.png?v=1657879889" alt="sunpanion">
+                                </span>
+                                <span>
+                                    <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/6.png?v=1657879877" alt="sunpanion">
+                                </span>
                             </div>
                             <div class="box-content">
                                 <h3>Live with transparency</h3>
@@ -357,12 +357,12 @@
                         </div>
                         <div class="single-box">
                             <div class="box-img">
-                                    <span>
-                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/9.png?v=1657880169" alt="sunpanion">
-                                    </span>
-                                    <span>
-                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/10.png?v=1657880158" alt="sunpanion">
-                                    </span>
+                                <span>
+                                    <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/7.png?v=1657879984" alt="sunpanion">
+                                </span>
+                                <span>
+                                    <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/8.png?v=1657879971" alt="sunpanion">
+                                </span>
                             </div>
                             <div class="box-content">
                                 <h3>Put others first</h3>
