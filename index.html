@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        .custom__section-area {
+            padding: 112px 0;
+        }
+        .custom__container{
+            margin: 0 auto;
+            padding:0 15px;
+            width: 100%;
+            max-width:1320px;
+        }
+        .row{
+            display: flex;
+        }
+        .col-lg-6{
+            width:50%;
+        }
+
+        /* Single Box */
+
+        .single-box{
+            display: flex;
+            margin-bottom: 1.2rem;
+        }
+        
+        .box-content{
+            width:80%;
+        }
+
+        .left__content{
+            padding-right: 2rem;
+        }
+        .left__content h2{
+            font-size:2.5rem;
+            color:#2e384d;
+            line-height: 1;
+            padding-bottom: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left:1.5rem;
+            letter-spacing: 0.025em;
+        }
+        .left__content h2 span{
+            color:#ffc60a;
+        }
+
+        .box-img{
+            width:20%;
+            position: relative;
+        }
+
+        .box-img span{
+            width: 70px;
+            height: 70px;
+            border: 2px solid #f3f4f6;
+            border-radius: 100%;
+        }
+        .box-img span:first-child img{
+            width: 45px;
+        }
+        .box-img span:last-child img{
+            width: 45px;
+        }
+        .single-box.active .box-img span:first-child{
+            display:none;
+        }
+        .single-box.active .box-img span:last-child{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .single-box .box-img span:first-child{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .single-box .box-img span:first-child img{
+            opacity: 0.3;
+        }
+        .single-box .box-img span:last-child{
+            display:none;
+        }
+        
+        .box-content h3{
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+            color:#2e384d;
+        }
+        .box-content p{
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color:#5a5b5d;
+            margin: 0;
+            width:95%;
+        }
+        .single-box.active .box-content h3{
+            color:#ffc60a;
+        }
+
+
+        .right__content{
+            padding-left: 2rem;
+        }
+
+        .right__content span{
+            display:none;
+        }
+        .right__content span img{
+            width: 100%;
+            padding-top: 3rem;
+            padding-right: 5rem;
+        }
+        .right__content span:first-child{
+            display:block;
+        }
+
+        @media (min-width: 768px)  and (max-width: 991px){
+            .custom__container{
+                max-width:720px;
+            }
+            .left__content h2{
+                font-size: 2rem;
+                margin-left: 1rem;
+            }
+            .right__content {
+                padding-left: 1rem;
+            } 
+            .right__content span img {
+                width: 100%;
+                padding-top: 3rem;
+                padding-right: 1rem;
+            }  
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <section class="custom__section-area">
+        <div class="custom__container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left__content">
+                        <h2>Our values are <span>Sunpanion</span> strong</h2>
+                        <div class="single-box active">
+                            <div class="box-img">
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/1.png?v=1657879708" alt="sunpanion">
+                                        
+                                    </span>
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/2.png?v=1657879747" alt="sunpanion">
+                                    </span>
+                            </div>
+                            <div class="box-content">
+                                <h3>Begin with care</h3>
+                                <p>We care about humanity and helping others fulfill the highest expression of themselves.</p>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="box-img">
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/3.png?v=1657879582" alt="sunpanion">
+                                    </span>
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/4.png?v=1657879403" alt="sunpanion">
+                                    </span>
+                            </div>
+                            <div class="box-content">
+                                <h3>Have fun</h3>
+                                <p>We have fun doing what we love. Life passes by too quickly to not enjoy every moment.</p>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="box-img">
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/5.png?v=1657879889" alt="sunpanion">
+                                    </span>
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/6.png?v=1657879877" alt="sunpanion">
+                                    </span>
+                            </div>
+                            <div class="box-content">
+                                <h3>Inspire hope</h3>
+                                <p>We take the initiative to create a massive impact on the world and set an example.</p>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="box-img">
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/7.png?v=1657879984" alt="sunpanion">
+                                    </span>
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/8.png?v=1657879971" alt="sunpanion">
+                                    </span>
+                            </div>
+                            <div class="box-content">
+                                <h3>Live with transparency</h3>
+                                <p>We define our values and follow through with the mission, never veering off course.</p>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="box-img">
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/9.png?v=1657880169" alt="sunpanion">
+                                    </span>
+                                    <span>
+                                        <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/10.png?v=1657880158" alt="sunpanion">
+                                    </span>
+                            </div>
+                            <div class="box-content">
+                                <h3>Put others first</h3>
+                                <p>We appreciate others and treat them the way we want to be treated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right__content">
+                        <span>
+                            <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/untitled-design-10-1657180447833.png?v=1657880327" alt="finance-your-solar" >
+                        </span>
+                        <span>
+                            <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/untitled-design-10-1657180447833.png?v=1657880327" alt="finance-your-solar" >
+                        </span>
+                        <span>
+                            <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/untitled-design-10-1657180447833.png?v=1657880327" alt="finance-your-solar" >
+                        </span>
+                        <span>
+                            <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/untitled-design-10-1657180447833.png?v=1657880327" alt="finance-your-solar" >
+                        </span>
+                        <span>
+                            <img src="https://cdn.shopify.com/s/files/1/0650/3995/8271/files/untitled-design-10-1657180447833.png?v=1657880327" alt="finance-your-solar" >
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const singleBoxes=document.querySelectorAll('.single-box');
+        const boxContent=document.querySelectorAll('.box-content');
+        const rightImages=document.querySelectorAll('.right__content span')
+        console.log(singleBoxes)
+        for (let i = 0; i < boxContent.length; i++) {
+            const element = boxContent[i];
+            element.addEventListener('mouseover',function(e) {
+                for (let j = 0; j < singleBoxes.length; j++) {
+                    const element = singleBoxes[j];
+                    if(singleBoxes[j].classList.contains('active')){
+                        singleBoxes[j].classList.remove('active')
+                    }
+                }
+                singleBoxes[i].classList.add('active')
+
+                for (let k = 0; k < rightImages.length; k++) {
+                    const element = rightImages[k];
+                    element.style.display='none'
+                }
+                rightImages[i].style.display='block'
+            })
+            element.addEventListener('mouseout',function(e) {
+                if(singleBoxes[i].classList.contains('active')){
+                    singleBoxes[i].classList.remove('active')
+                    rightImages[i].style.display='none'
+                    singleBoxes[0].classList.add('active')
+                    rightImages[0].style.display='block'
+                }
+            })
+            
+        }
+    </script>
+
+</body>
+</html>
